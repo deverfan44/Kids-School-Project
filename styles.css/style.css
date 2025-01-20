@@ -24,7 +24,7 @@ img{
     margin-bottom: -4px;
 }
 .title_size{
-    font-size: 3.5rem;
+    font-size: 2.9rem;
     text-align: center;
 }
 .primary_color{
@@ -71,18 +71,11 @@ a{
 header {
     padding: 10px 0px;
 }
-nav{}
-nav .brands{}
-nav .brands .brands_img{}
-nav .brands .brands_img img{}
-nav .brands .brands_name{}
 nav .main_menu {
     flex: 1;
     display: flex;
     justify-content: center;
 }
-nav .main_menu ul{}
-nav .main_menu ul li{}
 nav .main_menu ul > :nth-child(2) a{
     color: rgba(1, 172, 253, 1);
 }
@@ -97,5 +90,72 @@ nav .main_menu ul li a {
     margin-right: 4px;
     font-size: 1.25rem;
 }
-nav .nav_btn{}
-nav .nav_btn button{}
+
+
+/* Hero Section Style  */
+.hero_left{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero_left h1 {
+    font-size: 3.5rem;
+    margin-right: 75px;
+}
+.hero_left p {
+    margin: 24px 0px;
+    line-height: 1.4rem;
+    font-size: 1.25rem;
+}
+.hero_left .hero_btn button {
+    background-color: black;
+    padding: 15px 50px;
+}
+.hero-right{
+    flex-basis: 40%;
+}
+.hero-right .hero_img{
+    justify-content: center;
+    align-items: center;
+}
+.hero-right .hero_img img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 566px) {
+    .fixed_container{
+        width: 90%;
+        margin: auto;
+    }
+    .hero_content{
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    .hero_left h1 {
+        font-size: 2rem;
+        margin-right: 0px;
+    }
+    .hero_left{
+        text-align: center;
+    }
+    .empower{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide{
+    display: none;
+}
