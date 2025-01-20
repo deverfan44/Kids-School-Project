@@ -102,6 +102,9 @@ nav .main_menu ul li a {
 }
 
 /* Hero Section Style  */
+.hero_content{
+    padding: 20px 0px;
+}
 .hero_left{
     flex-basis: 55%;
     display: flex;
@@ -138,6 +141,9 @@ nav .main_menu ul li a {
         margin: auto;
     }
     /* Header Section  */
+    header{
+        border-bottom: 1px solid orange;
+    }
     nav .main_menu{
         display: none;
     }
@@ -149,6 +155,7 @@ nav .main_menu ul li a {
     }
     .menu_icon{
         display: block;
+        cursor: pointer;
     }
 
     /* Hero Section  */
@@ -174,7 +181,10 @@ nav .main_menu ul li a {
         margin: auto;
     }
     /* Header Section  */
-
+    nav{
+        flex-direction: column;
+        row-gap: 20px;
+    }
     /* Hero Section  */
     .hero_content{
         flex-direction: column-reverse;
