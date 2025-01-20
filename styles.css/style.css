@@ -91,6 +91,15 @@ nav .main_menu ul li a {
     font-size: 1.25rem;
 }
 
+.menu_icon{
+    display: none;
+}
+.menu_icon span{
+    display: inline-block;
+}
+.menu_icon span i {
+    font-size: 3rem;
+}
 
 /* Hero Section Style  */
 .hero_left{
@@ -128,12 +137,51 @@ nav .main_menu ul li a {
         width: 90%;
         margin: auto;
     }
+    /* Header Section  */
+    nav .main_menu{
+        display: none;
+    }
+    nav .nav_btn{
+        display: none;
+    }
+    nav .brands_name{
+        display: none;
+    }
+    .menu_icon{
+        display: block;
+    }
+
+    /* Hero Section  */
     .hero_content{
         flex-direction: column-reverse;
         row-gap: 30px;
     }
     .hero_left h1 {
         font-size: 2rem;
+        margin-right: 0px;
+    }
+    .hero_left{
+        text-align: center;
+    }
+    .empower{
+        display: block;
+    }
+}
+
+@media screen and (min-width:567px) and (max-width:767px) {
+    .fixed_container{
+        width: 90%;
+        margin: auto;
+    }
+    /* Header Section  */
+
+    /* Hero Section  */
+    .hero_content{
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    .hero_left h1 {
+        font-size: 2.5rem;
         margin-right: 0px;
     }
     .hero_left{
