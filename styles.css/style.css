@@ -1,5 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Shared Style  */
+.fixed_container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+img{
+    margin-bottom: -4px;
+}
+.title_size{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.primary_color{
+    color: rgba(254, 163, 1, 1);
+}
+.secondary_color{
+    color: rgba(1, 172, 253, 1);
+}
+.dark_2{
+    color: rgba(17, 17, 17, 1);
+}
+.dark_3{
+    color: rgba(128, 128, 128, 1);
+}
+.primary_btn {
+    display: inline-block;
+    padding: 10px 60px;
+    background-color: rgba(254, 163, 1, 1);
+    border: none;
+    font-size: 1.25rem;
+    border-radius: 7px;
+    color: white;
+    font-weight: 600;
+}
+.d_flex{
+    display: flex;
+}
+.space_between{
+    justify-content: space-between;
+}
+.align_center{
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* Header Style  */
+header {
+    padding: 10px 0px;
+}
+nav{}
+nav .brands{}
+nav .brands .brands_img{}
+nav .brands .brands_img img{}
+nav .brands .brands_name{}
+nav .main_menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+nav .main_menu ul{}
+nav .main_menu ul li{}
+nav .main_menu ul > :nth-child(2) a{
+    color: rgba(1, 172, 253, 1);
+}
+nav .main_menu ul > :nth-child(3) a{
+    color: rgba(5, 212, 223, 1);
+}
+nav .main_menu ul > :nth-child(4) a{
+    color: rgba(93, 88, 239, 1);
+}
+nav .main_menu ul li a {
+    padding: 7px 17px;
+    margin-right: 4px;
+    font-size: 1.25rem;
+}
+nav .nav_btn{}
+nav .nav_btn button{}
