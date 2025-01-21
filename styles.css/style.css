@@ -186,8 +186,23 @@ nav .main_menu ul li a {
     color: rgba(135, 0, 255, 1);
 }
 
-
-
+.corriculam_circle_btn {
+    margin-top: 80px;
+    justify-content: center;
+    column-gap: 10px;
+}
+.corri_btn {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: rgba(254, 163, 1, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 31px;
+    color: white;
+}
 
 
 
@@ -241,6 +256,9 @@ nav .main_menu ul li a {
     }
     .corriculam_title h1 {
         font-size: 2rem;
+    }
+    .corriculam_circle_btn {
+        display: none;
     }
 }
 
