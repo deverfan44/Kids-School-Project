@@ -48,6 +48,7 @@ img{
     border-radius: 7px;
     color: white;
     font-weight: 600;
+    cursor: pointer;
 }
 .d_flex{
     display: flex;
@@ -100,9 +101,17 @@ nav .main_menu ul li a {
 .menu_icon span i {
     font-size: 3rem;
 }
+.nav_btn button{
+    border: 1px solid transparent;
+    transition: .2s;
+}
+.nav_btn button:hover{
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid rgba(254, 163, 1, 1);
+} 
 
 /* Hero Section Style  */
-#hero_section{}
 .hero_content{
     padding: 20px 0px;
 }
@@ -135,7 +144,6 @@ nav .main_menu ul li a {
 .hero-right .hero_img img{
     max-width: 100%;
 }
-
 
 /* corriculam Section  */
 #corriculam_section{
@@ -276,6 +284,9 @@ nav .main_menu ul li a {
     top: 52%;
     left: 10%;
 }
+.item_3 .fload_stories{
+    background-color: rgb(0, 99, 13);
+}
 
 
 /* Footer style  */
@@ -345,6 +356,17 @@ nav .main_menu ul li a {
 }
 
 
+
+.hero_btn button, .stories_btn button, .corri_btn{
+    transition: .1s;
+}
+.hero_btn button:hover, .stories_btn button:hover{
+    background-color: rgba(254, 163, 1, 1);
+}
+.corri_btn:hover{
+    cursor: pointer;
+    background-color: rgb(46, 44, 42);
+}
 @media screen and (max-width: 566px) {
     .fixed_container{
         width: 90%;
@@ -352,7 +374,7 @@ nav .main_menu ul li a {
     }
     /* Header Section  */
     header{
-        border-bottom: 1px solid orange;
+        border-bottom: 1px solid rgba(254, 163, 1, 1);
     }
     nav .main_menu{
         display: none;
@@ -427,7 +449,18 @@ nav .main_menu ul li a {
         row-gap: 30px;
     }
 }
-
+@media screen and (min-width:375px) and (max-width:456px) {
+    .fload_stories {
+        top: 37%;
+        left: 11%;
+    }
+}
+@media screen and (max-width:374px) {
+    .fload_stories {
+        top: 33%;
+        left: 6%;
+    }
+}
 @media screen and (min-width:567px) and (max-width:767px) {
     .fixed_container{
         width: 90%;
