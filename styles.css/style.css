@@ -206,6 +206,52 @@ nav .main_menu ul li a {
 
 
 
+/* Stories Section  */
+.stories_section{
+    padding: 60px 0px;
+    background: linear-gradient(to top, rgba(254, 161, 1, 0.226),rgba(255, 255, 255, 0.212)), url('../images/bg.png') no-repeat center center / cover;
+}
+
+.stories_titel h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.stories_card {
+    display: grid;
+    grid-template-columns: 45% repeat(2,1fr);
+    gap: 20px;
+}
+.stories_card .stories_item{
+    background-color: white;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.stories_card .item_1 {
+    grid-row: 2 span;
+}
+.stories_card .item_1 .stories_text {
+    padding: 65px 30px 30px;
+}
+.stories_card .item_1 .stories_text h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.stories_card .item_1 .stories_text p {
+    line-height: 1.7rem;
+}
+.stories_item .stories_img{}
+.stories_item .stories_img img{
+    width: 100%;
+}
+.stories_item .stories_text {
+    padding: 25px 28px 0px;
+}
+.stories_item .stories_text h2 {
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+
 
 
 
@@ -260,6 +306,22 @@ nav .main_menu ul li a {
     .corriculam_circle_btn {
         display: none;
     }
+
+    /* Stories Section  */
+    .stories_card {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
+    .stories_card .item_1{
+        display: none;
+    }
+    .stories_card .stories_item{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .stories_card .stories_item .stories_text{
+        padding: 40px 20px 30px 30px;
+    }
 }
 
 @media screen and (min-width:567px) and (max-width:767px) {
@@ -296,15 +358,18 @@ nav .main_menu ul li a {
     .corriculam_item{
         flex-basis: calc(50% - 10px);
     }
+
+     /* Stories Section  */
+    .stories_card {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .stories_card .item_1{
+        grid-column: 2 span;
+    }
+    .stories_card .stories_item .stories_text{
+        padding: 40px 20px 30px 30px;
+    }
 }
-
-
-
-
-
-
-
-
 
 
 
