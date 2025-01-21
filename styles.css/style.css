@@ -225,6 +225,7 @@ nav .main_menu ul li a {
     background-color: white;
     overflow: hidden;
     border-radius: 15px;
+    position: relative;
 }
 .stories_card .item_1 {
     grid-row: 2 span;
@@ -261,6 +262,21 @@ nav .main_menu ul li a {
     background-color: black;
     font-weight: 400;
 }
+.fload_stories {
+    position: absolute;
+    background: rgba(149, 178, 38, 1);
+    padding: 8px 15px;
+    border-radius: 10px;
+    top: 58%;
+    left: 20%;
+    color: white;
+}
+.item_1 .fload_stories {
+    background-color: rgba(60, 216, 232, 1);
+    top: 52%;
+    left: 10%;
+}
+
 
 /* Footer style  */
 .footer_section{
@@ -399,7 +415,12 @@ nav .main_menu ul li a {
     .item_hide{
         display: block;
     }
-    
+    .fload_stories {
+        padding: 8px 15px;
+        font-size: 12px;
+        top: 50%;
+        left: 16%;
+    }
     /* footer Section  */
     .footer_info{
         flex-direction: column;
@@ -489,10 +510,23 @@ nav .main_menu ul li a {
         margin-top: 20px;
         justify-content: center;
     }
+    .fload_stories {
+        top: 54%;
+        left: 17%;
+        color: white;
+    }
+    .item_1 .fload_stories {
+        top: 62%;
+    }
 }
 
 
-
+@media screen and (min-width:768px) and(max-width:992px) {
+    .fixed_container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 
 
 .hide{
